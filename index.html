@@ -21,9 +21,10 @@
 
   *{ box-sizing: border-box; }
 
-  html{ scroll-behavior: smooth; }
+  html{ scroll-behavior: smooth; overflow-x: hidden; }
 
   body{
+    overflow-x: hidden; right after -webkit-font-smoothing: antialiased;
     margin: 0;
     background: var(--parchment);
     color: var(--ink);
@@ -142,6 +143,8 @@
   }
 
   #contact{
+    width: calc(100% + 56px)
+    overflow-x: hidden
     background: var(--parchment-alt);
     margin: 0 -28px;
     padding: 56px 28px 64px;
@@ -219,8 +222,15 @@
       <path d="M12 8v11M8 12H5.5a3.5 3.5 0 0 0 6.9 1M16 12h2.5a3.5 3.5 0 0 1-6.9 1"/>
     </svg>
     <h2>Who we are</h2>
-    <p>StraNova Holdings is a holding and investment company. We look for companies run by people who have found a genuinely better way to provide a service — not louder, not flashier, just smarter and more efficiant.  We back them with capital, patience, and vision.</p>
-    <p>We are industry-agnostic by design. The pattern we look for isn't a sector; it's a sharper method, applied with discipline, by a team that already understands their customer better than the incumbents do.</p>
+    <p>StraNova Holdings is a privately held healthcare services and business development company focused on building, supporting, and developing specialized organizations that deliver meaningful value to the communities they serve.
+
+StraNova selectively invests in and supports exceptional, ethical, and highly compliant companies that share a commitment to integrity, accountability, and excellence. We believe the strongest organizations are built on honest business practices, reliable service, quality outcomes, and a genuine commitment to making a positive impact in their communities.
+
+Through its operating companies, StraNova provides expertise, resources, and strategic support designed to strengthen organizations, improve performance, and create sustainable long-term value.
+</p>
+    <p>Our Philosophy
+
+Invest in good companies. Build them well. Serve communities with integrity</p>
   </section>
 
   <hr class="rule">
