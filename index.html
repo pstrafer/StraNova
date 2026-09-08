@@ -4,368 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StraNova Holdings, LLC</title>
-<meta name="description" content="StraNova Holdings, LLC is a holding and investment company backing intelligent, well-run businesses that serve their industries better.">
+
+<meta name="description" content="StraNova Holdings, LLC - Empowering Healthcare Excellence.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink: #0B1F35;
-    --harbor: #1E3A5C;
-    --parchment: #F3EFE5;
-    --parchment-alt: #EAE3D2;
-    --brass: #9C7C3E;
-    --hairline: #D4CBB4;
-    --ink-soft: #4A5568;
-  }
 
-  *{ box-sizing: border-box; }
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Source+Serif;
+    --parchment:#F3EFE5;
+    --parchment-alt:#EAE3D2;
+    --brass:#9C7C3E;
+    --hairline:#D4CBB4;
+}
 
-  html{ scroll-behavior: smooth; overflow-x: hidden; }
+*{
+    box-sizing:border-box;
+}
 
-  body{
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    background: var(--parchment);
-    color: var(--ink);
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 18px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
+body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Source Serif 4', serif;
+    line-height:1.6;
+}
 
-  a{ color: var(--harbor); text-decoration-color: var(--hairline); text-underline-offset: 3px; }
-  a:hover{ text-decoration-color: var(--brass); }
-  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
-    outline: 2px solid var(--brass);
-    outline-offset: 3px;
-  }
+.wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 24px;
+}
 
-  .wrap{
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 28px;
-  }
+/* HERO */
 
-  header.masthead{
-    padding: 88px 0 40px;
-    text-align: center;
-  }
+.hero{
+    text-align:center;
+    padding:70px 24px 90px;
+}
 
-  header.masthead img{
-    width: 220px;
-    height: auto;
-    margin-bottom: 28px;
-  }
+.hero-logo{
+    width:500px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto 30px;
+}
 
-  header.masthead h1{
-    font-family: 'Fraunces', serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 2.5rem;
-    letter-spacing: 0.01em;
-    margin: 0 0 6px;
-  }
+.hero h1{
+    font-family:'Fraunces', serif;
+    font-size:3.5rem;
+    font-weight:600;
+    margin:0;
+    color:var(--ink);
+}
 
-  header.masthead p.tagline{
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.15rem;
-    color: var(--harbor);
-    margin: 0;
-    letter-spacing: 0.02em;
-  }
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    color:var(--harbor);
+    font-style:italic;
+}
 
-  .rule{
-    width: 64px;
-    height: 2px;
-    background: var(--brass);
-    margin: 40px auto;
-    border: none;
-  }
+/* CONTACT */
 
-  section{
-    padding: 20px 0 56px;
-  }
+#contact{
+    background:var(--parchment-alt);
+    padding:70px 24px;
+}
 
-  section h2{
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.7rem;
-    margin: 0 0 22px;
-  }
+#contact h2{
+    font-family:'Fraunces', serif;
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:10px;
+}
 
-  section p{
-    margin: 0 0 20px;
-    max-width: 62ch;
-  }
+#contact .intro{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 40px;
+}
 
-  .mission-mark{
-    display: block;
-    margin: 0 auto 18px;
-    width: 34px;
-    height: auto;
-    opacity: 0.85;
-  }
+form{
+    max-width:500px;
+    margin:0 auto;
+    display:grid;
+    gap:18px;
+}
 
-  .criteria-list{
-    list-style: none;
-    margin: 28px 0 0;
-    padding: 0;
-    border-top: 1px solid var(--hairline);
-  }
+label{
+    display:block;
+    margin-bottom:6px;
+    color:var(--harbor);
+    font-family:'Fraunces', serif;
+}
 
-  .criteria-list li{
-    padding: 18px 0;
-    border-bottom: 1px solid var(--hairline);
-    display: grid;
-    grid-template-columns: 160px 1fr;
-    gap: 18px;
-  }
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid var(--hairline);
+    background:#fff;
+    font-family:'Source Serif 4', serif;
+    font-size:1rem;
+}
 
-  .criteria-list h3{
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 1.02rem;
-    margin: 0;
-    color: var(--harbor);
-  }
+textarea{
+    min-height:140px;
+    resize:vertical;
+}
 
-  .criteria-list p{
-    margin: 0;
-    font-size: 0.98rem;
-    color: var(--ink-soft);
-  }
+button{
+    background:var(--ink);
+    color:white;
+    border:none;
+    padding:14px 28px;
+    cursor:pointer;
+    font-family:'Fraunces', serif;
+    font-size:1rem;
+}
 
-  @media (max-width: 560px){
-    .criteria-list li{ grid-template-columns: 1fr; gap: 6px; }
-  }
+button:hover{
+    background:var(--harbor);
+}
 
-  #contact{
-    width: calc(100% + 56px)
-    overflow-x: hidden
-    background: var(--parchment-alt);
-    margin: 0 -28px;
-    padding: 56px 28px 64px;
-  }
-
-  #contact .wrap{ padding: 0; }
-
-  form{
-    display: grid;
-    gap: 18px;
-    margin-top: 28px;
-    width: 100%;  
-    max-width: 480px;
-  }
-form > div{ width: 100%; }
-  label{
-    font-family: 'Fraunces', serif;
-    font-size: 0.92rem;
-    color: var(--harbor);
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  input, textarea{
-    width: 100%;
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1rem;
-    padding: 11px 13px;
-    border: 1px solid var(--hairline);
-    background: var(--parchment);
-    color: var(--ink);
-    border-radius: 2px;
-  }
-
-  textarea{ min-height: 120px; resize: vertical; }
-
-  button.submit{
-    justify-self: start;
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 1rem;
-    background: var(--ink);
-    color: var(--parchment);
-    border: none;
-    padding: 13px 30px;
-    cursor: pointer;
-    border-radius: 2px;
-    letter-spacing: 0.02em;
-  }
-
-  button.submit:hover{ background: var(--harbor); }
-
-  footer{
-    text-align: center;
-    padding: 40px 28px 60px;
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:.9rem;
+    color:#666;
+}
 </style>
 </head>
 <body>
 
-<header class="masthead">
-    <div class="wrap">
+<section class="hero">
 
-<img src="logo.jpg" alt="StraNova Holdings Logo">
+    <img src="logo.jpg" alt="StraNova Holdings Logo" class="hero-logo">
 
-        <h1>StraNova Holdings, LLC</h1>
+    <h1>Empowering Healthcare Excellence.</h1>
 
-        <p class="tagline">
-            A steady hand behind smarter businesses in healthcare
-        </p>
-
-    </div>
-</header>
-
-<main class="wrap">
-
-<section id="about">
-
-<svg class="mission-mark" viewBox="0 0 24 24" fill="none" stroke="#9C7C3E" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="6" r="2"/>
-    <path d="M12 8v11M8 12H5.5a3.5 3.5 0 0 0 6.9 1M16 12h2.5a3.5 3.5 0 0 1-6.9 1"/>
-</svg>
-
-<h2>Who We Are</h2>
-
-<p>
-StraNova Holdings is a privately held healthcare services and business development company focused on building, supporting, and developing specialized healthcare organizations that improve the way care is delivered, managed, and supported.
-</p>
-
-<p>
-StraNova selectively invests in and supports exceptional, ethical, and highly compliant healthcare companies that demonstrate a commitment to integrity, accountability, operational excellence, and the communities they serve.
-</p>
-
-<p>
-Our focus is on healthcare organizations that contribute meaningful value to the healthcare ecosystem, helping providers operate more effectively, strengthening financial and operational performance, supporting better patient experiences, and enabling healthcare professionals to focus on delivering quality care.
-</p>
-
-<p>
-Through its operating companies, StraNova provides strategic guidance, business expertise, operational support, and resources designed to strengthen healthcare organizations and create sustainable, long-term value.
-</p>
+    <p>
+        Supporting innovative healthcare organizations through strategic leadership,
+        operational excellence, compliance, and sustainable growth.
+    </p>
 
 </section>
-
-<hr class="rule">
-
-<section id="criteria">
-
-<h2>What We Look For</h2>
-
-<ul class="criteria-list">
-
-<li>
-<h3>Clinical Excellence</h3>
-<p>
-Organizations committed to delivering exceptional patient care, improving outcomes, and maintaining the highest standards of quality, safety, and service.
-</p>
-</li>
-
-<li>
-<h3>Integrity &amp; Compliance</h3>
-<p>
-Leaders who embrace ethical business practices, regulatory compliance, accountability, and a culture built on trust, transparency, and responsibility.
-</p>
-</li>
-
-<li>
-<h3>Data-Driven Decision Making</h3>
-<p>
-Organizations that leverage data, analytics, performance reporting, and measurable insights to improve patient outcomes, optimize operations, and strengthen financial performance.
-</p>
-</li>
-
-<li>
-<h3>Revenue Cycle Excellence</h3>
-<p>
-Healthcare organizations dedicated to improving billing accuracy, maximizing reimbursement, reducing waste, and supporting the long-term financial stability of providers and healthcare facilities.
-</p>
-</li>
-
-<li>
-<h3>Patient Financial Advocacy</h3>
-<p>
-Companies that identify, recover, and return funds owed to patients while improving transparency, communication, and trust throughout the healthcare financial experience.
-</p>
-</li>
-
-<li>
-<h3>Operational Excellence</h3>
-<p>
-Organizations focused on efficient processes, workforce effectiveness, financial discipline, compliance, and sustainable growth that allows providers to concentrate on delivering exceptional care.
-</p>
-</li>
-
-<li>
-<h3>Community Impact</h3>
-<p>
-Healthcare businesses that strengthen the communities they serve through improved access to care, operational stability, and responsible stewardship of healthcare resources.
-</p>
-</li>
-
-<li>
-<h3>Long-Term Partnership</h3>
-<p>
-Organizations seeking a strategic partner committed to building enduring value through investment, leadership support, operational expertise, and responsible growth.
-</p>
-</li>
-
-</ul>
-
-</section>
-
-</main>
 
 <section id="contact">
-<div class="wrap">
 
-<h2>Get In Touch</h2>
+    <div class="wrap">
 
-<p>
-If you're supporting healthcare solutions in this spirit, or believe StraNova should know about a healthcare company that shares these values, we'd welcome the conversation.
-</p>
+        <h2>Contact Us</h2>
 
-<form action="https://formspree.io/f/mnpqgbzz" method="POST">
+        <p class="intro">
+            Whether you are a healthcare organization, industry partner, or simply
+            would like to learn more about StraNova Holdings, we welcome your inquiry.
+        </p>
 
-<div>
-<label for="name">Name</label>
-<input type="text" id="name" name="name" required>
-</div>
+        <form action="https://formspree.io/f/mnpqgbzz" method="POST">
 
-<div>
-<label for="email">Email</label>
-<input type="email" id="email" name="email" required>
-</div>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-<div>
-<label for="company">Company (If Applicable)</label>
-<input type="text" id="company" name="company">
-</div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-<div>
-<label for="message">Message</label>
-<textarea id="message" name="message" required></textarea>
-</div>
+            <div>
+                <label for="company">Organization</label>
+                <input type="text" id="company" name="company">
+            </div>
 
-<button class="submit" type="submit">
-Send Message
-</button>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
 
-</form>
+            <button type="submit">Send Message</button>
 
-</div>
+        </form>
+
+    </div>
+
 </section>
+
 <footer>
-  &copy; <span id="year"></span> StraNova Holdings, LLC. All rights reserved.
+    © <span id="year"></span> StraNova Holdings, LLC. All Rights Reserved.
 </footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent =
+new Date().getFullYear();
 </script>
 
 </body>
